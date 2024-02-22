@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workout Planner</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        display: flex;
+        height: 100vh;
+    }
+    .sidebar {
+        flex: 1;
+        background-color: #f4f4f4;
+        padding: 20px;
+        border-right: 1px solid #ccc;
+    }
+    .sidebar h2 {
+        margin-top: 0;
+    }
+    .workout-list {
+        list-style-type: none;
+        padding: 0;
+    }
+    .workout-item {
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        transition: background-color 0.3s ease;
+    }
+    .workout-item:hover {
+        background-color: #ddd;
+    }
+    .detail {
+        flex: 2;
+        padding: 20px;
+    }
+    .workout-details {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <h2>Workout List</h2>
+        <ul class="workout-list">
+            <li class="workout-item">Strength Training</li>
+            <li class="workout-item">Cardio</li>
+            <li class="workout-item">Flexibility</li>
+            <!-- Add more workout categories here -->
+        </ul>
+    </div>
+    <div class="detail">
+        <div class="workout-details">
+            <h2>Title: Full Body</h2>
+            <p>Description: This workout focuses on training all major muscle groups with a mix of compound and isolation exercises.</p>
+            <h3>Exercises:</h3>
+            <ol>
+                <li>Squats</li>
+                <li>Bench Press</li>
+                <li>Pull-ups</li>
+                <!-- Add more exercises here -->
+            </ol>
+        </div>
+    </div>
+</div>
+</body>
+</html>
